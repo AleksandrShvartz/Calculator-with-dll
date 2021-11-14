@@ -1,0 +1,51 @@
+\hypertarget{class_calculator}{}\doxysection{Calculator Class Reference}
+\label{class_calculator}\index{Calculator@{Calculator}}
+
+
+Главный класс калькулятора,позволяет догружать библиотечные функции из сторонних .dll файлов. Для этого в каждом подгружаемом файле должно быть 3 функции, если функция -\/ бинарный оператор\+: 1) double calculate(double a,double b) Должна взвращать искомое значение по передаваемым аргументам. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}$\ast$\char`\"{} для умножения 3)int priority Должна возвращать приоритет оператора -\/ число от 1 до 10, Сложение по умолчанию имеет приоритет 2. ~\newline
+ Название файла должно заканчиваться символом \textquotesingle{}2\textquotesingle{} если оператор представленный в файле -\/ бинарный Если функция -\/ унарный оператор, то в файле должны быть представлены 2 функции\+: 1) double calculate(double a) Должна взвращать искомое значение по передаваемому аргументу. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}sin\char`\"{} для функции синуса  
+
+
+
+
+{\ttfamily \#include $<$Calculator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_calculator_adf568b2e0dacc9adf5b7d740622beb92}\label{class_calculator_adf568b2e0dacc9adf5b7d740622beb92}} 
+{\bfseries Calculator} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса ищущий и загружающий библиотечные функции. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_calculator_a1f021d9a2ca9eab020498f914fe66b31}{calculate}} (std\+::string equation)
+\begin{DoxyCompactList}\small\item\em Основная функция возвращающая результат вычисления выражения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Главный класс калькулятора,позволяет догружать библиотечные функции из сторонних .dll файлов. Для этого в каждом подгружаемом файле должно быть 3 функции, если функция -\/ бинарный оператор\+: 1) double calculate(double a,double b) Должна взвращать искомое значение по передаваемым аргументам. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}$\ast$\char`\"{} для умножения 3)int priority Должна возвращать приоритет оператора -\/ число от 1 до 10, Сложение по умолчанию имеет приоритет 2. ~\newline
+ Название файла должно заканчиваться символом \textquotesingle{}2\textquotesingle{} если оператор представленный в файле -\/ бинарный Если функция -\/ унарный оператор, то в файле должны быть представлены 2 функции\+: 1) double calculate(double a) Должна взвращать искомое значение по передаваемому аргументу. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}sin\char`\"{} для функции синуса 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_calculator_a1f021d9a2ca9eab020498f914fe66b31}\label{class_calculator_a1f021d9a2ca9eab020498f914fe66b31}} 
+\index{Calculator@{Calculator}!calculate@{calculate}}
+\index{calculate@{calculate}!Calculator@{Calculator}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily double Calculator\+::calculate (\begin{DoxyParamCaption}\item[{std\+::string}]{equation }\end{DoxyParamCaption})}
+
+
+
+Основная функция возвращающая результат вычисления выражения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em equation} & Выражение коротое надо вычислить\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Результат вычисления
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Calculator.\+h\item 
+Calculator.\+cpp\end{DoxyCompactItemize}

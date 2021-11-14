@@ -1,0 +1,11 @@
+# ninja log v5
+1	2056	658613887	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Calculator_with_dll.cpp.obj	351fa775c592e26a
+1908	2345	658614328	Calculator_with_dll/Calculator_with_dll.exe	ca290e7daf655d77
+19	1497	658164975	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Parser.cpp.obj	34f5e34c980a6e08
+2	1907	658614327	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Calculator.cpp.obj	db0bb97a53c0ce36
+2	1520	658614595	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Calculator_with_dll.cpp.obj	351fa775c592e26a
+1521	1892	658614596	Calculator_with_dll/Calculator_with_dll.exe	ca290e7daf655d77
+9	1307	658616274	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Parser.cpp.obj	34f5e34c980a6e08
+1	2071	658616275	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Calculator_with_dll.cpp.obj	351fa775c592e26a
+23	2162	658616275	Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/Calculator.cpp.obj	db0bb97a53c0ce36
+2162	2542	658616276	Calculator_with_dll/Calculator_with_dll.exe	ca290e7daf655d77

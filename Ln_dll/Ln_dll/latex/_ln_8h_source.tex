@@ -1,0 +1,16 @@
+\hypertarget{_ln_8h_source}{}\doxysection{Ln.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifdef LN\_API\_EXPORTS}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define LN\_API \_\_declspec(dllexport)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define LN\_API \_\_declspec(dllimport)}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{14 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} LN\_API \textcolor{keywordtype}{double} calculate(\textcolor{keywordtype}{double} x);}
+\DoxyCodeLine{19 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} LN\_API std::string name();}
+\DoxyCodeLine{24 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} LN\_API \textcolor{keywordtype}{int} priority();}
+
+\end{DoxyCode}

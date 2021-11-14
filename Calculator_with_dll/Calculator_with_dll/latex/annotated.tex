@@ -1,0 +1,7 @@
+\doxysection{Class List}
+Here are the classes, structs, unions and interfaces with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\mbox{\hyperlink{class_calculator}{Calculator}} \\*Главный класс калькулятора,позволяет догружать библиотечные функции из сторонних .dll файлов. Для этого в каждом подгружаемом файле должно быть 3 функции, если функция -\/ бинарный оператор\+: 1) double calculate(double a,double b) Должна взвращать искомое значение по передаваемым аргументам. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}$\ast$\char`\"{} для умножения 3)int priority Должна возвращать приоритет оператора -\/ число от 1 до 10, Сложение по умолчанию имеет приоритет 2. ~\newline
+ Название файла должно заканчиваться символом \textquotesingle{}2\textquotesingle{} если оператор представленный в файле -\/ бинарный Если функция -\/ унарный оператор, то в файле должны быть представлены 2 функции\+: 1) double calculate(double a) Должна взвращать искомое значение по передаваемому аргументу. 2)std\+::string name(). Должна возвращать формат записи функции при использовании функции. Например\+: \char`\"{}sin\char`\"{} для функции синуса }{\pageref{class_calculator}}{}
+\item\contentsline{section}{\mbox{\hyperlink{struct_info_func}{Info\+Func}} }{\pageref{struct_info_func}}{}
+\item\contentsline{section}{\mbox{\hyperlink{class_parser}{Parser}} }{\pageref{class_parser}}{}
+\end{DoxyCompactList}

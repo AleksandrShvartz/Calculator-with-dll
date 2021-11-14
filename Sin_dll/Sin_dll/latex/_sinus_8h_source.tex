@@ -1,0 +1,17 @@
+\hypertarget{_sinus_8h_source}{}\doxysection{Sinus.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifdef SIN\_API\_EXPORTS}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define SIN\_API \_\_declspec(dllexport)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define SIN\_API \_\_declspec(dllimport)}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{13 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} SIN\_API \textcolor{keywordtype}{double} calculate(\textcolor{keywordtype}{double} x);  }
+\DoxyCodeLine{18 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} SIN\_API std::string name();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+
+\end{DoxyCode}

@@ -1,0 +1,33 @@
+\hypertarget{_parser_8h_source}{}\doxysection{Parser.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}InfoFunc.h"{}}}
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_parser}{Parser}} \{}
+\DoxyCodeLine{7     \textcolor{keyword}{struct }Expression \{}
+\DoxyCodeLine{12         Expression(std::string token) : token(token) \{\} }
+\DoxyCodeLine{18         Expression(std::string token, Expression a) : token(token), args\{ a \} \{\} }
+\DoxyCodeLine{25         Expression(std::string token, Expression a, Expression b) : token(token), args\{ a, b \} \{\} }
+\DoxyCodeLine{29         std::string token; }
+\DoxyCodeLine{33         std::vector<Expression> args; }
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{41     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_parser_a14b9f52f9b89bf6ef02dc5d26fde1aef}{Parser}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* input, \mbox{\hyperlink{struct_info_func}{InfoFunc}}* info) : input(input) \{ }
+\DoxyCodeLine{42         \textcolor{keywordflow}{if} (info)this-\/>info = info;}
+\DoxyCodeLine{43         \textcolor{keywordflow}{else} \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Info should be not null"{}};}
+\DoxyCodeLine{44     \} \textcolor{comment}{// Конструктор, принимает строку с выражением}}
+\DoxyCodeLine{49 \textcolor{comment}{}    \textcolor{keywordtype}{double} \mbox{\hyperlink{class_parser_adc743fcb2a73b00c9f14bbd817ba9559}{parse}}(); }
+\DoxyCodeLine{50 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51     std::string parseToken(); \textcolor{comment}{// Парсит один токен}}
+\DoxyCodeLine{52     Expression parseSimpleExpression(); \textcolor{comment}{// Парсит простое выражение}}
+\DoxyCodeLine{53     Expression parseBinaryExpression(\textcolor{keywordtype}{int} minPriority); \textcolor{comment}{// Парсит бинарное выражение}}
+\DoxyCodeLine{54     \mbox{\hyperlink{struct_info_func}{InfoFunc}}* info;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} getPriority(\textcolor{keyword}{const} std::string\& token);}
+\DoxyCodeLine{56     \textcolor{keywordtype}{double} eval(\textcolor{keyword}{const} Parser::Expression\& e);}
+\DoxyCodeLine{57     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* input; \textcolor{comment}{// Кусок строки, который еще не распарсили}}
+\DoxyCodeLine{58 \};}
+
+\end{DoxyCode}

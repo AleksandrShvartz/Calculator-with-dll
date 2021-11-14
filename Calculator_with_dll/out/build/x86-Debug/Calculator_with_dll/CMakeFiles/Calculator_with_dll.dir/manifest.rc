@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/Vladimir_Shvartc/source/repos/Calculator_with_dll/out/build/x86-Debug/Calculator_with_dll/CMakeFiles/Calculator_with_dll.dir/embed.manifest"

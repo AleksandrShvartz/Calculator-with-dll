@@ -1,0 +1,17 @@
+\hypertarget{_multiplication_8h_source}{}\doxysection{Multiplication.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifdef MULTIPLACATION\_API\_EXPORTS}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define MULTIPLACATION\_API \_\_declspec(dllexport)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MULTIPLACATION\_API \_\_declspec(dllimport)}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{14 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} MULTIPLACATION\_API \textcolor{keywordtype}{double} calculate(\textcolor{keywordtype}{double} x,\textcolor{keywordtype}{double} y);}
+\DoxyCodeLine{19 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} MULTIPLACATION\_API std::string name();}
+\DoxyCodeLine{24 \textcolor{keyword}{extern} \textcolor{stringliteral}{"{}C"{}} MULTIPLACATION\_API \textcolor{keywordtype}{int} priority();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+
+\end{DoxyCode}

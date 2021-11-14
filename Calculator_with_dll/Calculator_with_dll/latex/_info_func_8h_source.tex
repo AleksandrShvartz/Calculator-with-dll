@@ -1,0 +1,17 @@
+\hypertarget{_info_func_8h_source}{}\doxysection{Info\+Func.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{keyword}{typedef} double(*funcWithOneArg)(double);}
+\DoxyCodeLine{3 \textcolor{keyword}{typedef} double(*funcWithTwoArg)(double, double);}
+\DoxyCodeLine{4 \textcolor{keyword}{typedef} std::string(*funcName)();}
+\DoxyCodeLine{5 \textcolor{keyword}{typedef} int(*funcPriority)();}
+\DoxyCodeLine{6 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_info_func}{InfoFunc}} \{}
+\DoxyCodeLine{7     std::vector<funcWithOneArg>funcOne;}
+\DoxyCodeLine{8     std::vector<funcWithTwoArg>funcTwo;}
+\DoxyCodeLine{9     std::vector<std::string>namesOne;}
+\DoxyCodeLine{10     std::vector<std::string>namesTwo;}
+\DoxyCodeLine{11     std::vector<int>prioritiesTwo;}
+\DoxyCodeLine{12 \};}
+
+\end{DoxyCode}
